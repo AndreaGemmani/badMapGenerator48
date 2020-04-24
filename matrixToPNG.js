@@ -24,10 +24,10 @@ var matrixToPNG = function(dimImgX,dimImgY,transX,transY,scaling) {
 					  ];
 
 	this.arrColNomi = [ "alpha 0",
-						"nero",
-						"bianco",
-						"rosso",
-						"verde"
+						"black",
+						"white",
+						"red",
+						"green"
 					  ];
 
 
@@ -281,9 +281,9 @@ var matrixToPNG = function(dimImgX,dimImgY,transX,transY,scaling) {
 
 
 
-	this.salvaPNG = function(nome,format) {
+	this.salvaPNG = function(name,format) {
 
-		let nomeOK = nome || "prova";
+		let nomeOK = name || "map00";
 		let formatoOK = format || ".png";
 
 		save(mtp.immageMain, nomeOK + formatoOK);

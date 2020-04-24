@@ -16,7 +16,7 @@ function setup() {
 
 	createCanvas(560, 500);
 
-	refreshFramesCount = 10;
+	refreshFramesCount = 5;
 
 	m1 = new matrixToPNG(48,48,10,10,10);
 	scriv = new Scrivitore();
@@ -41,7 +41,7 @@ draw = function() {
 
 	}
 
-	if (! ((frameCount + 60) % refreshFramesCount) ) {
+	if (! ((frameCount + 10) % refreshFramesCount) ) {
 		background(150);
 		m1.mostra();
 		flagUpdateDraw = 0;

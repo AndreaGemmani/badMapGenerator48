@@ -54,7 +54,7 @@ var Scrivitore = function() {
 			}	
 		}
 		else {
-			console.log("Click fuori");
+			console.log("Click outside");
 		}
 
 	}
@@ -65,12 +65,12 @@ var Scrivitore = function() {
 			// carcolo il punto in cui clicca riferito al quadratello di phi #0 index based
 			let nX = floor((mouseX - scr.punto0.x) * scr.dimMatrix.x / scr.dimCanvasMatrix.x);
 			let nY = floor((mouseY - scr.punto0.y) * scr.dimMatrix.y / scr.dimCanvasMatrix.y);
-			console.log("Click su " + nX + " " + nY);
+			console.log("Click on " + nX + " " + nY);
 
 			mtp.changePixelCode(nX,nY,scr.numeroColCurr);	
 		}
 		else {
-			console.log("Click fuori");
+			console.log("Click outside");
 		}		
 
 	}
@@ -111,11 +111,11 @@ var Scrivitore = function() {
 				scr.actBrushSize = val;
 			}
 			else {
-				console.log("Valore not in range");
+				console.log("Value not in range");
 			}
 		}
 		else {
-			console.log("Valore NaN");
+			console.log("Value NaN");
 		}
 	}
 
