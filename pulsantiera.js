@@ -107,17 +107,17 @@ var Pulsantiera = function() {
 	this.creaMappaBaseButt = createButton("createBaseMap").position(spzXPulsDx,170);
 	this.creaMappaBaseButt.mousePressed(puls.creaMappaBase);
 
-	this.nonBlackToAlphaButt = createButton("nonBlackToAlpha").position(spzXPulsDx,170);
+	this.nonBlackToAlphaButt = createButton("nonBlackToAlpha").position(spzXPulsDx,220);
 	this.nonBlackToAlphaButt.mousePressed(puls.nonBlackToAlpha);
 
 
-	this.cambiaFlagMostraBrushButt = createButton("flagShowBrush").position(spzXPulsDx,280);
+	this.cambiaFlagMostraBrushButt = createButton("flagShowBrush").position(spzXPulsDx,290);
 	this.cambiaFlagMostraBrushButt.mousePressed(puls.cambiaFlagMostraBrush);
 
-	this.cambiaFlagMostraNomeColButt = createButton("flagShowNameCol").position(spzXPulsDx,330);
+	this.cambiaFlagMostraNomeColButt = createButton("flagShowNameCol").position(spzXPulsDx,340);
 	this.cambiaFlagMostraNomeColButt.mousePressed(puls.cambiaFlagMostraNomeCol);
 
-	this.cambiaFlagPrendiSpigoliButt = createButton("flagCornerBrush").position(spzXPulsDx,380);
+	this.cambiaFlagPrendiSpigoliButt = createButton("flagCornerBrush").position(spzXPulsDx,390);
 	this.cambiaFlagPrendiSpigoliButt.mousePressed(puls.cambiaFlagPrendiSpigoli);
 
 	this.salvaPNGmatrixButt = createButton("savePNG").position(spzXPulsDx,450);

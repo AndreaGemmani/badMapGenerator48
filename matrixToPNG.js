@@ -245,7 +245,13 @@ var matrixToPNG = function(dimImgX,dimImgY,transX,transY,scaling) {
 					let a = mtp.immageMain.get(j,k)[3];
 					let ix = j * scaling;
 					let iy = k * scaling;
-					fill( color(r,g,b,a) );
+					if(a == 0) {
+						let zz = ( (j+k+1) %2 ) * 50 + 130;
+						fill( color(zz,zz,zz,150) );
+					}
+					else {
+						fill( color(r,g,b,a) );
+					}
 					rect(ix, iy, scaling, scaling);
 				}
 			}
